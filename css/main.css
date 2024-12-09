@@ -185,7 +185,7 @@ main .key_visual{
 /* Section 02 */
 .section02 {
     margin-top: 150px;
-    height: 60vh;
+    /* height: 60vh; */
     background-color: #f5f5f5;
 }
 .section02_container{
@@ -265,6 +265,7 @@ main .key_visual{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    gap: 5px;
 }
 .section03 .lush_arts img{
     transition: all 0.2s;
