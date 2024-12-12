@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- jQuery -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- Page JS -->
+    <script src="./js/lush_main.js"></script>
 </head>
 
 <body>
@@ -62,6 +66,70 @@
                     </div>
                 </nav>
             </div>
+            <!-- Depth Menu -->
+            <div class="depth_menu_container">
+                <nav class="depth_menu w1300">
+                    <!-- Main Category -->
+                    <div class="menu_container">
+                        <h2>Category</h2>
+                        <ul class="main_category01">
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">콜라보</a></li>
+                            <li><a href="#">리미티드</a></li>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">베쓰</a></li>
+                            <li><a href="#">샤워</a></li>
+                            <li><a href="#">보디</a></li>
+                            <li><a href="#">프래그런스</a></li>
+                        </ul>
+                        <ul class="main_category02">
+                            <li><a href="#">헤어</a></li>
+                            <li><a href="#">페이스</a></li>
+                            <li><a href="#">메이크업</a></li>
+                            <li><a href="#">기프트</a></li>
+                            <li><a href="#">악세서리</a></li>
+                            <li><a href="#">스웨그</a></li>
+                            <li><a href="#">스파</a></li>
+                            <li><a href="#">체험</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Event Menu -->
+
+                    <div class="menu_container">
+                        <h2>Event</h2>
+                        <ul class="event_menu">
+                            <li><a href="#">러쉬 이벤트</a></li>
+                            <li><a href="#">선정자 발표</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Community Menu -->
+                    <div class="menu_container">
+                        <h2>Community</h2>
+                        <ul class="community_menu">
+                            <li><a href="#">젤리쉬</a></li>
+                            <li><a href="#">에디터 픽</a></li>
+                            <li><a href="#">러쉬 타임즈</a></li>
+                            <li><a href="#">리토의 일기장</a></li>
+                            <li><a href="#">다운로드 러쉬</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- News Menu -->
+                    <div class="menu_container">
+                        <h2>Lush Info</h2>
+                        <ul class="news_menu">
+                            <li><a href="#">러쉬 소개</a></li>
+                            <li><a href="#">러쉬 이야기</a></li>
+                            <li><a href="#">채러티팟</a></li>
+                            <li><a href="#">서명 캠페인</a></li>
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">채용공고</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
 
         <!-- main -->
@@ -86,21 +154,21 @@
                         <div class="card">
                             <img src="./images/section01/lush_pick_product_01.png" alt="lush pick product 01">
                             <div class="card_info">
-                                <h2>코앞의 겨울, 피부를 지켜줄<br>촉촉 보습 케어 루틴</h2>
+                                <h2>코앞의 겨울,<br>피부를 지켜줄<br>촉촉 보습 케어 루틴</h2>
                                 <a href="#"><button>큐레이션 보러가기</button></a>
                             </div>
                         </div>
                         <div class="card">
                             <img src="./images/section01/lush_pick_product_02.png" alt="lush pick product 02">
                             <div class="card_info">
-                                <h2>핑그빛 듀오의 마법이 스며든<br>윤기 나는 머릿결</h2>
+                                <h2>핑그빛 듀오의<br>마법이 스며든<br>윤기 나는 머릿결</h2>
                                 <a href="#"><button>큐레이션 보러가기</button></a>
                             </div>
                         </div>
                         <div class="card">
                             <img src="./images/section01/lush_pick_product_03.png" alt="lush pick product 03">
                             <div class="card_info">
-                                <h2>장바구니를 신선함으로<br>가득 채우고 싶다면</h2>
+                                <h2>장바구니를<br>신선함으로<br>가득 채우고 싶다면</h2>
                                 <a href="#"><button>큐레이션 보러가기</button></a>
                             </div>
                         </div>
@@ -120,20 +188,20 @@
                         <h2>Lush For You</h2>
                         <!-- tag -->
                         <ul>
-                            <li>
-                                <a href="#">#Chrismas</a>
+                            <li id="chrismas">
+                                #Chrismas
                             </li>
-                            <li>
-                                <a href="#">#Minions</a>
+                            <li id="minions">
+                                #Minions
                             </li>
-                            <li>
-                                <a href="#">#Perfume</a>
+                            <li id="perfume">
+                                #Perfume
                             </li>
-                            <li>
-                                <a href="#">#Diwali</a>
+                            <li id="diwali">
+                                #Diwali
                             </li>
-                            <li>
-                                <a href="#">#DDLM</a>
+                            <li id="ddlm">
+                                #DDLM
                             </li>
                         </ul>
 
@@ -143,7 +211,7 @@
                     </div>
 
                     <div class="video_container">
-                        <iframe width="800" height="450"
+                        <iframe class="video" width="800" height="450"
                             src="https://www.youtube.com/embed/T2fg96QVvqk?si=zU-AyvLYqJHgqQCr&amp;controls=0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -154,29 +222,38 @@
             </section>
 
             <!-- Section 03 -->
-             <section class="section03 w1300">
+            <section class="section03 w1300">
                 <h2>Lush Arts & Media</h2>
                 <div class="lush_arts">
                     <ul>
-                        <li><a href="#"><img src="./images/section03/lush_product_01.png" alt="Lush Product image 01"></a></li>
-                        <li><a href="#"><img src="./images/section03/lush_product_02.png" alt="Lush Product image 02"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_01.png"
+                                    alt="Lush Product image 01"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_02.png"
+                                    alt="Lush Product image 02"></a></li>
                     </ul>
                     <ul>
-                        <li><a href="#"><img src="./images/section03/lush_product_03.png" alt="Lush Product image 03"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_03.png"
+                                    alt="Lush Product image 03"></a></li>
                     </ul>
                     <ul>
-                        <li><a href="#"><img src="./images/section03/lush_product_04.png" alt="Lush Product image 04"></a></li>
-                        <li><a href="#"><img src="./images/section03/lush_product_05.png" alt="Lush Product image 05"></a></li>
-                        <li><a href="#"><img src="./images/section03/lush_product_06.png" alt="Lush Product image 06"></a></li>
-                        <li><a href="#"><img src="./images/section03/lush_product_07.png" alt="Lush Product image 07"></a></li>
-                        <li><a href="#"><img src="./images/section03/lush_product_08.png" alt="Lush Product image 08"></a></li>
-                        <li><a href="#"><img src="./images/section03/lush_product_09.png" alt="Lush Product image 09"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_04.png"
+                                    alt="Lush Product image 04"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_05.png"
+                                    alt="Lush Product image 05"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_06.png"
+                                    alt="Lush Product image 06"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_07.png"
+                                    alt="Lush Product image 07"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_08.png"
+                                    alt="Lush Product image 08"></a></li>
+                        <li><a href="#"><img src="./images/section03/lush_product_09.png"
+                                    alt="Lush Product image 09"></a></li>
                     </ul>
                 </div>
                 <div class="btn">
                     <a href="#" id="show_more_btn">전체 보러가기</a>
                 </div>
-             </section>
+            </section>
         </main>
 
         <!-- Footer -->
@@ -226,6 +303,12 @@
             </div>
         </footer>
         <!-- /Footer -->
+
+        <!-- Common Alert -->
+        <div id="alert">
+            <p>죄송합니다.😓</p>
+            <p>해당 페이지는 준비중 입니다.</p>
+        </div>
     </div>
 </body>
 
